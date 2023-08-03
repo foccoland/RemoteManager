@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		E570EF8D2A7AB472004122C5 /* RemoteManager.docc in Sources */ = {isa = PBXBuildFile; fileRef = E570EF8C2A7AB472004122C5 /* RemoteManager.docc */; };
 		E570EF8E2A7AB472004122C5 /* RemoteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E570EF8B2A7AB472004122C5 /* RemoteManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E570EF952A7AB4A4004122C5 /* RemoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570EF942A7AB4A4004122C5 /* RemoteManager.swift */; };
+		E570EF972A7AB539004122C5 /* GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570EF962A7AB539004122C5 /* GET.swift */; };
+		E570EF992A7AC485004122C5 /* URLSessionEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570EF982A7AC485004122C5 /* URLSessionEnvironment.swift */; };
+		E570EF9B2A7AC77D004122C5 /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570EF9A2A7AC77D004122C5 /* SwiftUIExample.swift */; };
+		E570EF9D2A7BA07E004122C5 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570EF9C2A7BA07E004122C5 /* DataState.swift */; };
+		E570EF9F2A7BA2D9004122C5 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570EF9E2A7BA2D9004122C5 /* DataError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E570EF882A7AB472004122C5 /* RemoteManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E570EF8B2A7AB472004122C5 /* RemoteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteManager.h; sourceTree = "<group>"; };
 		E570EF8C2A7AB472004122C5 /* RemoteManager.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RemoteManager.docc; sourceTree = "<group>"; };
+		E570EF942A7AB4A4004122C5 /* RemoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteManager.swift; sourceTree = "<group>"; };
+		E570EF962A7AB539004122C5 /* GET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GET.swift; sourceTree = "<group>"; };
+		E570EF982A7AC485004122C5 /* URLSessionEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionEnvironment.swift; sourceTree = "<group>"; };
+		E570EF9A2A7AC77D004122C5 /* SwiftUIExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
+		E570EF9C2A7BA07E004122C5 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		E570EF9E2A7BA2D9004122C5 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,12 @@
 			children = (
 				E570EF8B2A7AB472004122C5 /* RemoteManager.h */,
 				E570EF8C2A7AB472004122C5 /* RemoteManager.docc */,
+				E570EF942A7AB4A4004122C5 /* RemoteManager.swift */,
+				E570EF962A7AB539004122C5 /* GET.swift */,
+				E570EF9C2A7BA07E004122C5 /* DataState.swift */,
+				E570EF9A2A7AC77D004122C5 /* SwiftUIExample.swift */,
+				E570EF9E2A7BA2D9004122C5 /* DataError.swift */,
+				E570EF982A7AC485004122C5 /* URLSessionEnvironment.swift */,
 			);
 			path = RemoteManager;
 			sourceTree = "<group>";
@@ -132,7 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E570EF972A7AB539004122C5 /* GET.swift in Sources */,
 				E570EF8D2A7AB472004122C5 /* RemoteManager.docc in Sources */,
+				E570EF992A7AC485004122C5 /* URLSessionEnvironment.swift in Sources */,
+				E570EF9D2A7BA07E004122C5 /* DataState.swift in Sources */,
+				E570EF9F2A7BA2D9004122C5 /* DataError.swift in Sources */,
+				E570EF9B2A7AC77D004122C5 /* SwiftUIExample.swift in Sources */,
+				E570EF952A7AB4A4004122C5 /* RemoteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
