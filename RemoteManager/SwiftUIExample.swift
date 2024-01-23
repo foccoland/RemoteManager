@@ -13,35 +13,24 @@ struct Person: Encodable {
 }
 
 struct Todo: Decodable {
-    let userId: Int
-    let id: Int
-    let title: String
-    let completed: Bool
+    var userId: Int
+    var id: Int
+    var title: String
+    var completed: Bool
 }
 
 
 struct SwiftUIExample: View {
     
-    @GET(request: URLRequest(url: URL(string: "https://jsonplaceholder.typicode.com/todos/3")!)) var todo: DataState<Todo>
+    @GET(request: URLRequest(url: URL(string: "https://jsonplaceholder.typicode.com/todos/6")!)) var todo: DataState<Todo>
     
     var body: some View {
         Text(getTodo())
     }
     
     func getTodo() -> String {
-        switch todo {
-        case .idle:
-            return "Idle"
-        case .loading:
-            return "Loading"
-        case .finished(let result):
-            switch result {
-            case .success(let s):
-                return s.title
-            case .failure(let err):
-                return "Error: \(err.localizedDescription)"
-            }
-        }
+        guard let title = (todo.get { $0.title }) else { return "" }
+        return title
     }
 }
 
